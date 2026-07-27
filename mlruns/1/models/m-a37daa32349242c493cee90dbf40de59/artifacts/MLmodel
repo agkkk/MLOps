@@ -1,0 +1,23 @@
+artifact_path: /home/ananth_kowlagi/ml/mlruns/1/models/m-a37daa32349242c493cee90dbf40de59/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.12.3
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.0
+    skops_trusted_types: null
+mlflow_version: 3.14.0
+model_id: m-a37daa32349242c493cee90dbf40de59
+model_size_bytes: 3714132
+model_uuid: m-a37daa32349242c493cee90dbf40de59
+prompts: null
+run_id: 46dcd3a099444f8abad614cc19717836
+utc_time_created: '2026-07-24 06:16:08.540259'
