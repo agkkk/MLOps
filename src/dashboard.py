@@ -7,14 +7,18 @@ import matplotlib.pyplot as plt
 import os
 import sqlite3
 import requests
+import streamlit_autorefresh
 
 # --- 1. Page Setup ---
 st.set_page_config(page_title="ABC Retail ML Dashboard", layout="wide")
 st.title("📊 ABC Retail Group - Intelligent ML Dashboard")
 st.markdown("Automated insights, anomaly detection, and forecasting powered by Machine Learning.")
 
+# Refresh the page every 60 seconds
+streamlit_autorefresh.st_autorefresh(interval=60000, key="data_refresh")
+
 # --- 2. Load ML-Enriched Data (Batch Processing) ---
-@st.cache_data
+#@st.cache_data
 def load_data():
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     df_anomalies = pd.read_csv(os.path.join(BASE_DIR, 'data', 'ml_anomalies.csv'))
@@ -76,7 +80,7 @@ with tab3:
 with tab4:
     st.header("📈 Footfall vs. Revenue (Linear Regression)")
     st.markdown("This model calculates a linear trendline to prove exactly how an increase in footfall mathematically impacts total daily revenue.")
-    
+        
     try:
         df_lr = pd.read_csv('src/data/ml_forecast.csv')
         # We sort by footfall so the trendline draws smoothly from left to right
@@ -84,18 +88,19 @@ with tab4:
         st.line_chart(df_plot)
     except FileNotFoundError:
         st.warning("Data not found. Please run the scheduler to generate the Linear Regression data.")
+
 # ==========================================
 # TAB 5: LIVE API INFERENCE & CRUD
 # ==========================================
 with tab5:
     st.header("⚡ Live Control Center")
-    
+        
     # ==========================================
     # SECTION A: LIVE API PREDICTION
     # ==========================================
     st.subheader("1. Live API Inference (Revenue Forecast)")
     st.markdown("Test the active Revenue Pickle model in real-time without altering the database.")
-    
+        
     with st.form("api_prediction_form"):
         st.markdown("Enter simulated daily metrics to get a live revenue prediction via FastAPI.")
         col1, col2 = st.columns(2)
@@ -104,9 +109,9 @@ with tab5:
             api_marketing = st.number_input("Marketing Spend", value=500.0)
         with col2:
             api_operating = st.number_input("Operating Cost", value=2000.0)
-            
+                
         submit_api = st.form_submit_button("Predict Revenue via FastAPI")
-        
+            
     if submit_api:
         # Perfectly matching the schema shown in your Swagger UI image
         payload = {

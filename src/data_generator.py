@@ -2,6 +2,7 @@ import sqlite3
 import random
 from datetime import datetime, timedelta
 import os
+import pandas as pd
 
 # FIXED: Added 'src' to the path so it finds the correct folder
 DB_PATH = os.path.join('src', 'data', 'retail.db')
@@ -10,18 +11,30 @@ def generate_full_dataset():
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
-    tables = ['sales', 'inventory', 'finance', 'support', 'logistics']
-    for table in tables:
-        cursor.execute(f'DELETE FROM {table}')
+    # 1. Find the last date in the database to know where to append
+    try:
+        cursor.execute("SELECT MAX(date) FROM sales")
+        last_date_str = cursor.fetchone()[0]
+    except sqlite3.OperationalError:
+        # Failsafe just in case the table is completely uninitialized
+        last_date_str = None
 
-    # TWEAKED: Started earlier so we can generate more historical data
-    start_date = datetime(2024, 1, 1) 
+    # 2. Figure out what day comes next
+    if last_date_str:
+        # If data exists, start generating from the day AFTER the last entry
+        start_date = datetime.strptime(last_date_str, '%Y-%m-%d') + timedelta(days=1)
+        print(f"Appending new data for 1 day starting from {start_date.strftime('%Y-%m-%d')}...")
+    else:
+        # If the database is completely empty, start from the beginning
+        start_date = datetime(2024, 1, 1)
+        print("Database empty. Generating initial baseline data...")
+
     categories = ['Electronics', 'Clothing', 'Grocery']
     
-    # TWEAKED: Increased from 180 days to 730 days (2 years of data)
-    print("Generating 730 days (2 years) of cross-department data...")
+    # 3. Only generate 1 NEW DAY of data every time this runs
+    days_to_generate = 1
 
-    for i in range(730):
+    for i in range(days_to_generate):
         current_date = (start_date + timedelta(days=i)).strftime('%Y-%m-%d')
         
         # Base daily metrics
@@ -70,8 +83,14 @@ def generate_full_dataset():
                        (current_date, daily_shipments, delayed, round(daily_shipments*15,2)))
 
     conn.commit()
+
+    tables = ['sales', 'inventory', 'finance', 'support', 'logistics']
+    for table in tables:
+        df = pd.read_sql_query(f"SELECT * FROM {table}", conn)
+        df.to_csv(os.path.join('src', 'data', f'{table}_data.csv'), index=False)
+        
     conn.close()
-    print("✅ All tables populated with 730 days of realistic business data.")
+    print("✅ New daily data successfully appended to the database.")
 
 if __name__ == "__main__":
     generate_full_dataset()

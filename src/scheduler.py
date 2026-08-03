@@ -9,12 +9,15 @@ def run_pipeline():
     print(f"\n[🕰️ {current_time}] CRON JOB TRIGGERED: Starting Automated ML Pipeline...")
     
     try:
-        # This acts exactly as if you typed the command into the terminal
+        # 1. RUN THE GENERATOR FIRST to append the new day
+        subprocess.run([sys.executable, "src/data_generator.py"], check=True)
+        
+        # 2. THEN TRAIN THE MODELS on the fresh data
         subprocess.run([sys.executable, "src/ml/train_models.py"], check=True)
+        
         print(f"[✅ {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] Automated training cycle completed successfully.")
     except subprocess.CalledProcessError as e:
         print(f"[❌] Pipeline execution failed: {e}")
-
 # ==========================================
 # SCHEDULE CONFIGURATION
 # ==========================================

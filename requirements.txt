@@ -8,3 +8,4 @@ seaborn
 matplotlib
 mlflow
 schedule
+streamlit-autorefresh
