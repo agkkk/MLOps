@@ -7,5 +7,6 @@ services:
     ports:
       - "8000:8000" # Maps FastAPI
       - "8501:8501" # Maps Streamlit
+      - "5000:5000" # Maps MLflow
     volumes:
       - .:/app # Keeps your local code synced with the container
