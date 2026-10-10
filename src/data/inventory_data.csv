@@ -1,661 +1,799 @@
-id,date,category,stock_level,restock_threshold
-1,2026-01-01,Electronics,347,100
-2,2026-01-01,Clothing,77,100
-3,2026-01-01,Grocery,646,100
-4,2026-01-02,Electronics,366,100
-5,2026-01-02,Clothing,170,100
-6,2026-01-02,Grocery,154,100
-7,2026-01-03,Electronics,321,100
-8,2026-01-03,Clothing,871,100
-9,2026-01-03,Grocery,610,100
-10,2026-01-04,Electronics,392,100
-11,2026-01-04,Clothing,229,100
-12,2026-01-04,Grocery,725,100
-13,2026-01-05,Electronics,458,100
-14,2026-01-05,Clothing,109,100
-15,2026-01-05,Grocery,929,100
-16,2026-01-06,Electronics,860,100
-17,2026-01-06,Clothing,924,100
-18,2026-01-06,Grocery,486,100
-19,2026-01-07,Electronics,786,100
-20,2026-01-07,Clothing,579,100
-21,2026-01-07,Grocery,309,100
-22,2026-01-08,Electronics,653,100
-23,2026-01-08,Clothing,298,100
-24,2026-01-08,Grocery,771,100
-25,2026-01-09,Electronics,637,100
-26,2026-01-09,Clothing,52,100
-27,2026-01-09,Grocery,570,100
-28,2026-01-10,Electronics,487,100
-29,2026-01-10,Clothing,769,100
-30,2026-01-10,Grocery,368,100
-31,2026-01-11,Electronics,345,100
-32,2026-01-11,Clothing,830,100
-33,2026-01-11,Grocery,199,100
-34,2026-01-12,Electronics,579,100
-35,2026-01-12,Clothing,117,100
-36,2026-01-12,Grocery,488,100
-37,2026-01-13,Electronics,691,100
-38,2026-01-13,Clothing,244,100
-39,2026-01-13,Grocery,494,100
-40,2026-01-14,Electronics,834,100
-41,2026-01-14,Clothing,994,100
-42,2026-01-14,Grocery,127,100
-43,2026-01-15,Electronics,819,100
-44,2026-01-15,Clothing,148,100
-45,2026-01-15,Grocery,278,100
-46,2026-01-16,Electronics,606,100
-47,2026-01-16,Clothing,702,100
-48,2026-01-16,Grocery,318,100
-49,2026-01-17,Electronics,707,100
-50,2026-01-17,Clothing,759,100
-51,2026-01-17,Grocery,663,100
-52,2026-01-18,Electronics,776,100
-53,2026-01-18,Clothing,81,100
-54,2026-01-18,Grocery,950,100
-55,2026-01-19,Electronics,546,100
-56,2026-01-19,Clothing,581,100
-57,2026-01-19,Grocery,674,100
-58,2026-01-20,Electronics,115,100
-59,2026-01-20,Clothing,859,100
-60,2026-01-20,Grocery,868,100
-61,2026-01-21,Electronics,480,100
-62,2026-01-21,Clothing,606,100
-63,2026-01-21,Grocery,463,100
-64,2026-01-22,Electronics,837,100
-65,2026-01-22,Clothing,168,100
-66,2026-01-22,Grocery,583,100
-67,2026-01-23,Electronics,698,100
-68,2026-01-23,Clothing,209,100
-69,2026-01-23,Grocery,837,100
-70,2026-01-24,Electronics,112,100
-71,2026-01-24,Clothing,821,100
-72,2026-01-24,Grocery,941,100
-73,2026-01-25,Electronics,960,100
-74,2026-01-25,Clothing,608,100
-75,2026-01-25,Grocery,649,100
-76,2026-01-26,Electronics,491,100
-77,2026-01-26,Clothing,443,100
-78,2026-01-26,Grocery,650,100
-79,2026-01-27,Electronics,869,100
-80,2026-01-27,Clothing,359,100
-81,2026-01-27,Grocery,184,100
-82,2026-01-28,Electronics,854,100
-83,2026-01-28,Clothing,134,100
-84,2026-01-28,Grocery,649,100
-85,2026-01-29,Electronics,64,100
-86,2026-01-29,Clothing,459,100
-87,2026-01-29,Grocery,802,100
-88,2026-01-30,Electronics,494,100
-89,2026-01-30,Clothing,187,100
-90,2026-01-30,Grocery,511,100
-91,2026-01-31,Electronics,699,100
-92,2026-01-31,Clothing,673,100
-93,2026-01-31,Grocery,362,100
-94,2026-02-01,Electronics,238,100
-95,2026-02-01,Clothing,65,100
-96,2026-02-01,Grocery,953,100
-97,2026-02-02,Electronics,293,100
-98,2026-02-02,Clothing,247,100
-99,2026-02-02,Grocery,229,100
-100,2026-02-03,Electronics,332,100
-101,2026-02-03,Clothing,573,100
-102,2026-02-03,Grocery,670,100
-103,2026-02-04,Electronics,996,100
-104,2026-02-04,Clothing,450,100
-105,2026-02-04,Grocery,101,100
-106,2026-02-05,Electronics,101,100
-107,2026-02-05,Clothing,190,100
-108,2026-02-05,Grocery,679,100
-109,2026-02-06,Electronics,923,100
-110,2026-02-06,Clothing,352,100
-111,2026-02-06,Grocery,395,100
-112,2026-02-07,Electronics,711,100
-113,2026-02-07,Clothing,617,100
-114,2026-02-07,Grocery,580,100
-115,2026-02-08,Electronics,984,100
-116,2026-02-08,Clothing,429,100
-117,2026-02-08,Grocery,816,100
-118,2026-02-09,Electronics,245,100
-119,2026-02-09,Clothing,79,100
-120,2026-02-09,Grocery,398,100
-121,2026-02-10,Electronics,421,100
-122,2026-02-10,Clothing,464,100
-123,2026-02-10,Grocery,578,100
-124,2026-02-11,Electronics,432,100
-125,2026-02-11,Clothing,337,100
-126,2026-02-11,Grocery,992,100
-127,2026-02-12,Electronics,110,100
-128,2026-02-12,Clothing,181,100
-129,2026-02-12,Grocery,302,100
-130,2026-02-13,Electronics,792,100
-131,2026-02-13,Clothing,349,100
-132,2026-02-13,Grocery,792,100
-133,2026-02-14,Electronics,241,100
-134,2026-02-14,Clothing,142,100
-135,2026-02-14,Grocery,979,100
-136,2026-02-15,Electronics,85,100
-137,2026-02-15,Clothing,70,100
-138,2026-02-15,Grocery,800,100
-139,2026-02-16,Electronics,127,100
-140,2026-02-16,Clothing,302,100
-141,2026-02-16,Grocery,715,100
-142,2026-02-17,Electronics,662,100
-143,2026-02-17,Clothing,317,100
-144,2026-02-17,Grocery,238,100
-145,2026-02-18,Electronics,556,100
-146,2026-02-18,Clothing,409,100
-147,2026-02-18,Grocery,418,100
-148,2026-02-19,Electronics,448,100
-149,2026-02-19,Clothing,365,100
-150,2026-02-19,Grocery,920,100
-151,2026-02-20,Electronics,809,100
-152,2026-02-20,Clothing,744,100
-153,2026-02-20,Grocery,958,100
-154,2026-02-21,Electronics,899,100
-155,2026-02-21,Clothing,816,100
-156,2026-02-21,Grocery,110,100
-157,2026-02-22,Electronics,393,100
-158,2026-02-22,Clothing,868,100
-159,2026-02-22,Grocery,646,100
-160,2026-02-23,Electronics,879,100
-161,2026-02-23,Clothing,764,100
-162,2026-02-23,Grocery,430,100
-163,2026-02-24,Electronics,379,100
-164,2026-02-24,Clothing,104,100
-165,2026-02-24,Grocery,795,100
-166,2026-02-25,Electronics,725,100
-167,2026-02-25,Clothing,847,100
-168,2026-02-25,Grocery,923,100
-169,2026-02-26,Electronics,164,100
-170,2026-02-26,Clothing,295,100
-171,2026-02-26,Grocery,242,100
-172,2026-02-27,Electronics,571,100
-173,2026-02-27,Clothing,848,100
-174,2026-02-27,Grocery,240,100
-175,2026-02-28,Electronics,674,100
-176,2026-02-28,Clothing,390,100
-177,2026-02-28,Grocery,517,100
-178,2026-03-01,Electronics,716,100
-179,2026-03-01,Clothing,377,100
-180,2026-03-01,Grocery,309,100
-181,2026-03-02,Electronics,860,100
-182,2026-03-02,Clothing,429,100
-183,2026-03-02,Grocery,74,100
-184,2026-03-03,Electronics,758,100
-185,2026-03-03,Clothing,417,100
-186,2026-03-03,Grocery,54,100
-187,2026-03-04,Electronics,474,100
-188,2026-03-04,Clothing,605,100
-189,2026-03-04,Grocery,756,100
-190,2026-03-05,Electronics,587,100
-191,2026-03-05,Clothing,921,100
-192,2026-03-05,Grocery,589,100
-193,2026-03-06,Electronics,267,100
-194,2026-03-06,Clothing,284,100
-195,2026-03-06,Grocery,926,100
-196,2026-03-07,Electronics,955,100
-197,2026-03-07,Clothing,143,100
-198,2026-03-07,Grocery,515,100
-199,2026-03-08,Electronics,190,100
-200,2026-03-08,Clothing,155,100
-201,2026-03-08,Grocery,410,100
-202,2026-03-09,Electronics,532,100
-203,2026-03-09,Clothing,776,100
-204,2026-03-09,Grocery,829,100
-205,2026-03-10,Electronics,233,100
-206,2026-03-10,Clothing,332,100
-207,2026-03-10,Grocery,219,100
-208,2026-03-11,Electronics,652,100
-209,2026-03-11,Clothing,265,100
-210,2026-03-11,Grocery,858,100
-211,2026-03-12,Electronics,843,100
-212,2026-03-12,Clothing,71,100
-213,2026-03-12,Grocery,225,100
-214,2026-03-13,Electronics,257,100
-215,2026-03-13,Clothing,512,100
-216,2026-03-13,Grocery,351,100
-217,2026-03-14,Electronics,249,100
-218,2026-03-14,Clothing,623,100
-219,2026-03-14,Grocery,790,100
-220,2026-03-15,Electronics,376,100
-221,2026-03-15,Clothing,706,100
-222,2026-03-15,Grocery,670,100
-223,2026-03-16,Electronics,799,100
-224,2026-03-16,Clothing,224,100
-225,2026-03-16,Grocery,73,100
-226,2026-03-17,Electronics,294,100
-227,2026-03-17,Clothing,658,100
-228,2026-03-17,Grocery,681,100
-229,2026-03-18,Electronics,480,100
-230,2026-03-18,Clothing,994,100
-231,2026-03-18,Grocery,305,100
-232,2026-03-19,Electronics,924,100
-233,2026-03-19,Clothing,334,100
-234,2026-03-19,Grocery,329,100
-235,2026-03-20,Electronics,573,100
-236,2026-03-20,Clothing,93,100
-237,2026-03-20,Grocery,684,100
-238,2026-03-21,Electronics,417,100
-239,2026-03-21,Clothing,770,100
-240,2026-03-21,Grocery,895,100
-241,2026-03-22,Electronics,871,100
-242,2026-03-22,Clothing,270,100
-243,2026-03-22,Grocery,78,100
-244,2026-03-23,Electronics,739,100
-245,2026-03-23,Clothing,170,100
-246,2026-03-23,Grocery,483,100
-247,2026-03-24,Electronics,680,100
-248,2026-03-24,Clothing,398,100
-249,2026-03-24,Grocery,711,100
-250,2026-03-25,Electronics,812,100
-251,2026-03-25,Clothing,511,100
-252,2026-03-25,Grocery,140,100
-253,2026-03-26,Electronics,679,100
-254,2026-03-26,Clothing,864,100
-255,2026-03-26,Grocery,973,100
-256,2026-03-27,Electronics,968,100
-257,2026-03-27,Clothing,79,100
-258,2026-03-27,Grocery,641,100
-259,2026-03-28,Electronics,863,100
-260,2026-03-28,Clothing,454,100
-261,2026-03-28,Grocery,327,100
-262,2026-03-29,Electronics,868,100
-263,2026-03-29,Clothing,651,100
-264,2026-03-29,Grocery,380,100
-265,2026-03-30,Electronics,501,100
-266,2026-03-30,Clothing,803,100
-267,2026-03-30,Grocery,75,100
-268,2026-03-31,Electronics,904,100
-269,2026-03-31,Clothing,424,100
-270,2026-03-31,Grocery,601,100
-271,2026-04-01,Electronics,598,100
-272,2026-04-01,Clothing,891,100
-273,2026-04-01,Grocery,521,100
-274,2026-04-02,Electronics,962,100
-275,2026-04-02,Clothing,520,100
-276,2026-04-02,Grocery,654,100
-277,2026-04-03,Electronics,829,100
-278,2026-04-03,Clothing,283,100
-279,2026-04-03,Grocery,799,100
-280,2026-04-04,Electronics,148,100
-281,2026-04-04,Clothing,133,100
-282,2026-04-04,Grocery,766,100
-283,2026-04-05,Electronics,394,100
-284,2026-04-05,Clothing,579,100
-285,2026-04-05,Grocery,130,100
-286,2026-04-06,Electronics,803,100
-287,2026-04-06,Clothing,971,100
-288,2026-04-06,Grocery,149,100
-289,2026-04-07,Electronics,106,100
-290,2026-04-07,Clothing,867,100
-291,2026-04-07,Grocery,579,100
-292,2026-04-08,Electronics,858,100
-293,2026-04-08,Clothing,920,100
-294,2026-04-08,Grocery,483,100
-295,2026-04-09,Electronics,981,100
-296,2026-04-09,Clothing,264,100
-297,2026-04-09,Grocery,885,100
-298,2026-04-10,Electronics,919,100
-299,2026-04-10,Clothing,267,100
-300,2026-04-10,Grocery,950,100
-301,2026-04-11,Electronics,705,100
-302,2026-04-11,Clothing,480,100
-303,2026-04-11,Grocery,988,100
-304,2026-04-12,Electronics,682,100
-305,2026-04-12,Clothing,927,100
-306,2026-04-12,Grocery,862,100
-307,2026-04-13,Electronics,447,100
-308,2026-04-13,Clothing,546,100
-309,2026-04-13,Grocery,416,100
-310,2026-04-14,Electronics,200,100
-311,2026-04-14,Clothing,612,100
-312,2026-04-14,Grocery,114,100
-313,2026-04-15,Electronics,96,100
-314,2026-04-15,Clothing,123,100
-315,2026-04-15,Grocery,530,100
-316,2026-04-16,Electronics,823,100
-317,2026-04-16,Clothing,952,100
-318,2026-04-16,Grocery,95,100
-319,2026-04-17,Electronics,877,100
-320,2026-04-17,Clothing,747,100
-321,2026-04-17,Grocery,59,100
-322,2026-04-18,Electronics,148,100
-323,2026-04-18,Clothing,293,100
-324,2026-04-18,Grocery,852,100
-325,2026-04-19,Electronics,278,100
-326,2026-04-19,Clothing,569,100
-327,2026-04-19,Grocery,966,100
-328,2026-04-20,Electronics,51,100
-329,2026-04-20,Clothing,997,100
-330,2026-04-20,Grocery,638,100
-331,2026-04-21,Electronics,897,100
-332,2026-04-21,Clothing,508,100
-333,2026-04-21,Grocery,864,100
-334,2026-04-22,Electronics,888,100
-335,2026-04-22,Clothing,629,100
-336,2026-04-22,Grocery,798,100
-337,2026-04-23,Electronics,708,100
-338,2026-04-23,Clothing,514,100
-339,2026-04-23,Grocery,924,100
-340,2026-04-24,Electronics,644,100
-341,2026-04-24,Clothing,635,100
-342,2026-04-24,Grocery,388,100
-343,2026-04-25,Electronics,359,100
-344,2026-04-25,Clothing,394,100
-345,2026-04-25,Grocery,78,100
-346,2026-04-26,Electronics,989,100
-347,2026-04-26,Clothing,784,100
-348,2026-04-26,Grocery,63,100
-349,2026-04-27,Electronics,579,100
-350,2026-04-27,Clothing,279,100
-351,2026-04-27,Grocery,929,100
-352,2026-04-28,Electronics,427,100
-353,2026-04-28,Clothing,957,100
-354,2026-04-28,Grocery,727,100
-355,2026-04-29,Electronics,233,100
-356,2026-04-29,Clothing,98,100
-357,2026-04-29,Grocery,165,100
-358,2026-04-30,Electronics,183,100
-359,2026-04-30,Clothing,399,100
-360,2026-04-30,Grocery,698,100
-361,2026-05-01,Electronics,839,100
-362,2026-05-01,Clothing,261,100
-363,2026-05-01,Grocery,655,100
-364,2026-05-02,Electronics,926,100
-365,2026-05-02,Clothing,851,100
-366,2026-05-02,Grocery,348,100
-367,2026-05-03,Electronics,500,100
-368,2026-05-03,Clothing,125,100
-369,2026-05-03,Grocery,865,100
-370,2026-05-04,Electronics,994,100
-371,2026-05-04,Clothing,379,100
-372,2026-05-04,Grocery,808,100
-373,2026-05-05,Electronics,233,100
-374,2026-05-05,Clothing,318,100
-375,2026-05-05,Grocery,707,100
-376,2026-05-06,Electronics,724,100
-377,2026-05-06,Clothing,357,100
-378,2026-05-06,Grocery,235,100
-379,2026-05-07,Electronics,229,100
-380,2026-05-07,Clothing,923,100
-381,2026-05-07,Grocery,981,100
-382,2026-05-08,Electronics,937,100
-383,2026-05-08,Clothing,540,100
-384,2026-05-08,Grocery,960,100
-385,2026-05-09,Electronics,287,100
-386,2026-05-09,Clothing,75,100
-387,2026-05-09,Grocery,602,100
-388,2026-05-10,Electronics,403,100
-389,2026-05-10,Clothing,110,100
-390,2026-05-10,Grocery,242,100
-391,2026-05-11,Electronics,250,100
-392,2026-05-11,Clothing,780,100
-393,2026-05-11,Grocery,761,100
-394,2026-05-12,Electronics,588,100
-395,2026-05-12,Clothing,625,100
-396,2026-05-12,Grocery,288,100
-397,2026-05-13,Electronics,414,100
-398,2026-05-13,Clothing,887,100
-399,2026-05-13,Grocery,884,100
-400,2026-05-14,Electronics,594,100
-401,2026-05-14,Clothing,583,100
-402,2026-05-14,Grocery,669,100
-403,2026-05-15,Electronics,483,100
-404,2026-05-15,Clothing,466,100
-405,2026-05-15,Grocery,672,100
-406,2026-05-16,Electronics,51,100
-407,2026-05-16,Clothing,412,100
-408,2026-05-16,Grocery,110,100
-409,2026-05-17,Electronics,584,100
-410,2026-05-17,Clothing,620,100
-411,2026-05-17,Grocery,813,100
-412,2026-05-18,Electronics,696,100
-413,2026-05-18,Clothing,339,100
-414,2026-05-18,Grocery,980,100
-415,2026-05-19,Electronics,388,100
-416,2026-05-19,Clothing,842,100
-417,2026-05-19,Grocery,140,100
-418,2026-05-20,Electronics,614,100
-419,2026-05-20,Clothing,391,100
-420,2026-05-20,Grocery,713,100
-421,2026-05-21,Electronics,867,100
-422,2026-05-21,Clothing,983,100
-423,2026-05-21,Grocery,487,100
-424,2026-05-22,Electronics,882,100
-425,2026-05-22,Clothing,205,100
-426,2026-05-22,Grocery,792,100
-427,2026-05-23,Electronics,563,100
-428,2026-05-23,Clothing,640,100
-429,2026-05-23,Grocery,793,100
-430,2026-05-24,Electronics,465,100
-431,2026-05-24,Clothing,348,100
-432,2026-05-24,Grocery,320,100
-433,2026-05-25,Electronics,530,100
-434,2026-05-25,Clothing,512,100
-435,2026-05-25,Grocery,551,100
-436,2026-05-26,Electronics,406,100
-437,2026-05-26,Clothing,932,100
-438,2026-05-26,Grocery,327,100
-439,2026-05-27,Electronics,115,100
-440,2026-05-27,Clothing,692,100
-441,2026-05-27,Grocery,815,100
-442,2026-05-28,Electronics,151,100
-443,2026-05-28,Clothing,374,100
-444,2026-05-28,Grocery,706,100
-445,2026-05-29,Electronics,497,100
-446,2026-05-29,Clothing,755,100
-447,2026-05-29,Grocery,353,100
-448,2026-05-30,Electronics,370,100
-449,2026-05-30,Clothing,176,100
-450,2026-05-30,Grocery,99,100
-451,2026-05-31,Electronics,752,100
-452,2026-05-31,Clothing,215,100
-453,2026-05-31,Grocery,155,100
-454,2026-06-01,Electronics,389,100
-455,2026-06-01,Clothing,561,100
-456,2026-06-01,Grocery,536,100
-457,2026-06-02,Electronics,539,100
-458,2026-06-02,Clothing,834,100
-459,2026-06-02,Grocery,299,100
-460,2026-06-03,Electronics,70,100
-461,2026-06-03,Clothing,552,100
-462,2026-06-03,Grocery,275,100
-463,2026-06-04,Electronics,876,100
-464,2026-06-04,Clothing,874,100
-465,2026-06-04,Grocery,918,100
-466,2026-06-05,Electronics,630,100
-467,2026-06-05,Clothing,775,100
-468,2026-06-05,Grocery,157,100
-469,2026-06-06,Electronics,836,100
-470,2026-06-06,Clothing,224,100
-471,2026-06-06,Grocery,98,100
-472,2026-06-07,Electronics,349,100
-473,2026-06-07,Clothing,746,100
-474,2026-06-07,Grocery,713,100
-475,2026-06-08,Electronics,334,100
-476,2026-06-08,Clothing,525,100
-477,2026-06-08,Grocery,317,100
-478,2026-06-09,Electronics,768,100
-479,2026-06-09,Clothing,753,100
-480,2026-06-09,Grocery,832,100
-481,2026-06-10,Electronics,511,100
-482,2026-06-10,Clothing,929,100
-483,2026-06-10,Grocery,599,100
-484,2026-06-11,Electronics,214,100
-485,2026-06-11,Clothing,775,100
-486,2026-06-11,Grocery,900,100
-487,2026-06-12,Electronics,412,100
-488,2026-06-12,Clothing,113,100
-489,2026-06-12,Grocery,156,100
-490,2026-06-13,Electronics,295,100
-491,2026-06-13,Clothing,657,100
-492,2026-06-13,Grocery,923,100
-493,2026-06-14,Electronics,512,100
-494,2026-06-14,Clothing,499,100
-495,2026-06-14,Grocery,306,100
-496,2026-06-15,Electronics,748,100
-497,2026-06-15,Clothing,412,100
-498,2026-06-15,Grocery,921,100
-499,2026-06-16,Electronics,897,100
-500,2026-06-16,Clothing,140,100
-501,2026-06-16,Grocery,718,100
-502,2026-06-17,Electronics,153,100
-503,2026-06-17,Clothing,714,100
-504,2026-06-17,Grocery,225,100
-505,2026-06-18,Electronics,469,100
-506,2026-06-18,Clothing,88,100
-507,2026-06-18,Grocery,760,100
-508,2026-06-19,Electronics,119,100
-509,2026-06-19,Clothing,296,100
-510,2026-06-19,Grocery,120,100
-511,2026-06-20,Electronics,457,100
-512,2026-06-20,Clothing,368,100
-513,2026-06-20,Grocery,166,100
-514,2026-06-21,Electronics,754,100
-515,2026-06-21,Clothing,119,100
-516,2026-06-21,Grocery,648,100
-517,2026-06-22,Electronics,540,100
-518,2026-06-22,Clothing,729,100
-519,2026-06-22,Grocery,533,100
-520,2026-06-23,Electronics,493,100
-521,2026-06-23,Clothing,882,100
-522,2026-06-23,Grocery,272,100
-523,2026-06-24,Electronics,231,100
-524,2026-06-24,Clothing,443,100
-525,2026-06-24,Grocery,945,100
-526,2026-06-25,Electronics,238,100
-527,2026-06-25,Clothing,635,100
-528,2026-06-25,Grocery,415,100
-529,2026-06-26,Electronics,933,100
-530,2026-06-26,Clothing,436,100
-531,2026-06-26,Grocery,63,100
-532,2026-06-27,Electronics,786,100
-533,2026-06-27,Clothing,499,100
-534,2026-06-27,Grocery,343,100
-535,2026-06-28,Electronics,191,100
-536,2026-06-28,Clothing,496,100
-537,2026-06-28,Grocery,333,100
-538,2026-06-29,Electronics,671,100
-539,2026-06-29,Clothing,292,100
-540,2026-06-29,Grocery,107,100
-541,2026-06-29,Electronics,858,100
-542,2026-06-29,Clothing,282,100
-543,2026-06-29,Grocery,617,100
-544,2026-06-30,Electronics,562,100
-545,2026-06-30,Clothing,533,100
-546,2026-06-30,Grocery,718,100
-547,2026-07-01,Electronics,308,100
-548,2026-07-01,Clothing,348,100
-549,2026-07-01,Grocery,654,100
-550,2026-07-02,Electronics,196,100
-551,2026-07-02,Clothing,604,100
-552,2026-07-02,Grocery,193,100
-553,2026-07-03,Electronics,525,100
-554,2026-07-03,Clothing,908,100
-555,2026-07-03,Grocery,281,100
-556,2026-07-04,Electronics,990,100
-557,2026-07-04,Clothing,243,100
-558,2026-07-04,Grocery,254,100
-559,2026-07-05,Electronics,557,100
-560,2026-07-05,Clothing,94,100
-561,2026-07-05,Grocery,236,100
-562,2026-07-06,Electronics,837,100
-563,2026-07-06,Clothing,570,100
-564,2026-07-06,Grocery,353,100
-565,2026-07-07,Electronics,540,100
-566,2026-07-07,Clothing,95,100
-567,2026-07-07,Grocery,366,100
-568,2026-07-08,Electronics,904,100
-569,2026-07-08,Clothing,674,100
-570,2026-07-08,Grocery,124,100
-571,2026-07-09,Electronics,757,100
-572,2026-07-09,Clothing,721,100
-573,2026-07-09,Grocery,309,100
-574,2026-07-10,Electronics,152,100
-575,2026-07-10,Clothing,507,100
-576,2026-07-10,Grocery,812,100
-577,2026-07-11,Electronics,432,100
-578,2026-07-11,Clothing,686,100
-579,2026-07-11,Grocery,382,100
-580,2026-07-12,Electronics,719,100
-581,2026-07-12,Clothing,135,100
-582,2026-07-12,Grocery,937,100
-583,2026-07-13,Electronics,429,100
-584,2026-07-13,Clothing,495,100
-585,2026-07-13,Grocery,994,100
-586,2026-07-14,Electronics,699,100
-587,2026-07-14,Clothing,535,100
-588,2026-07-14,Grocery,748,100
-589,2026-07-15,Electronics,105,100
-590,2026-07-15,Clothing,433,100
-591,2026-07-15,Grocery,662,100
-592,2026-07-16,Electronics,250,100
-593,2026-07-16,Clothing,746,100
-594,2026-07-16,Grocery,671,100
-595,2026-07-17,Electronics,353,100
-596,2026-07-17,Clothing,326,100
-597,2026-07-17,Grocery,256,100
-598,2026-07-18,Electronics,410,100
-599,2026-07-18,Clothing,82,100
-600,2026-07-18,Grocery,667,100
-601,2026-07-19,Electronics,644,100
-602,2026-07-19,Clothing,693,100
-603,2026-07-19,Grocery,485,100
-604,2026-07-20,Electronics,841,100
-605,2026-07-20,Clothing,233,100
-606,2026-07-20,Grocery,825,100
-607,2026-07-21,Electronics,157,100
-608,2026-07-21,Clothing,978,100
-609,2026-07-21,Grocery,389,100
-610,2026-07-22,Electronics,911,100
-611,2026-07-22,Clothing,216,100
-612,2026-07-22,Grocery,112,100
-613,2026-07-23,Electronics,499,100
-614,2026-07-23,Clothing,599,100
-615,2026-07-23,Grocery,426,100
-616,2026-07-24,Electronics,964,100
-617,2026-07-24,Clothing,634,100
-618,2026-07-24,Grocery,759,100
-619,2026-07-25,Electronics,510,100
-620,2026-07-25,Clothing,368,100
-621,2026-07-25,Grocery,575,100
-622,2026-07-26,Electronics,386,100
-623,2026-07-26,Clothing,61,100
-624,2026-07-26,Grocery,343,100
-625,2026-07-27,Electronics,680,100
-626,2026-07-27,Clothing,708,100
-627,2026-07-27,Grocery,293,100
-628,2026-07-28,Electronics,762,100
-629,2026-07-28,Clothing,340,100
-630,2026-07-28,Grocery,916,100
-631,2026-07-29,Electronics,684,100
-632,2026-07-29,Clothing,379,100
-633,2026-07-29,Grocery,358,100
-634,2026-07-30,Electronics,826,100
-635,2026-07-30,Clothing,279,100
-636,2026-07-30,Grocery,423,100
-637,2026-07-31,Electronics,89,100
-638,2026-07-31,Clothing,545,100
-639,2026-07-31,Grocery,422,100
-640,2026-08-01,Electronics,610,100
-641,2026-08-01,Clothing,127,100
-642,2026-08-01,Grocery,916,100
-643,2026-08-02,Electronics,772,100
-644,2026-08-02,Clothing,221,100
-645,2026-08-02,Grocery,752,100
-646,2026-08-03,Electronics,97,100
-647,2026-08-03,Clothing,515,100
-648,2026-08-03,Grocery,393,100
-649,2026-08-04,Electronics,447,100
-650,2026-08-04,Clothing,320,100
-651,2026-08-04,Grocery,690,100
-652,2026-08-05,Electronics,852,100
-653,2026-08-05,Clothing,438,100
-654,2026-08-05,Grocery,508,100
-655,2026-08-06,Electronics,777,100
-656,2026-08-06,Clothing,225,100
-657,2026-08-06,Grocery,904,100
-658,2026-08-07,Electronics,497,100
-659,2026-08-07,Clothing,663,100
-660,2026-08-07,Grocery,398,100
+date,category,stock_level,restock_threshold
+2012-01-08,Furniture,24,1
+2012-01-08,Technology,15,2
+2012-01-10,Technology,13,1
+2012-01-21,Furniture,27,1
+2012-01-24,Technology,5,1
+2012-02-10,Technology,34,3
+2012-02-14,Technology,11,1
+2012-02-15,Office Supplies,28,4
+2012-02-16,Furniture,54,3
+2012-02-19,Office Supplies,7,1
+2012-02-23,Furniture,22,1
+2012-02-23,Technology,12,1
+2012-02-25,Technology,7,1
+2012-02-28,Office Supplies,12,1
+2012-03-02,Technology,46,3
+2012-03-04,Office Supplies,26,1
+2012-03-04,Technology,13,1
+2012-03-06,Furniture,2,1
+2012-03-06,Office Supplies,29,1
+2012-03-09,Technology,19,1
+2012-03-10,Technology,3,1
+2012-03-11,Furniture,24,2
+2012-03-13,Office Supplies,12,1
+2012-03-30,Furniture,28,1
+2012-04-05,Office Supplies,26,2
+2012-04-07,Office Supplies,11,1
+2012-04-15,Furniture,24,1
+2012-04-21,Office Supplies,35,1
+2012-04-26,Technology,14,1
+2012-05-01,Furniture,26,1
+2012-05-02,Technology,5,1
+2012-05-03,Furniture,39,3
+2012-05-11,Furniture,7,1
+2012-05-12,Furniture,12,1
+2012-05-12,Office Supplies,8,1
+2012-05-12,Technology,41,3
+2012-05-16,Technology,11,1
+2012-05-20,Furniture,28,2
+2012-05-22,Technology,25,2
+2012-05-23,Office Supplies,29,2
+2012-05-29,Furniture,14,2
+2012-06-02,Furniture,3,1
+2012-06-06,Office Supplies,43,2
+2012-06-07,Technology,14,1
+2012-06-10,Furniture,15,1
+2012-06-14,Furniture,38,2
+2012-06-16,Furniture,23,1
+2012-06-17,Furniture,21,1
+2012-06-20,Furniture,19,1
+2012-06-21,Technology,22,1
+2012-06-25,Furniture,8,1
+2012-06-28,Furniture,22,2
+2012-07-13,Technology,42,1
+2012-07-17,Furniture,12,1
+2012-07-18,Technology,19,1
+2012-07-26,Office Supplies,53,3
+2012-08-02,Technology,24,1
+2012-08-07,Technology,16,1
+2012-08-08,Office Supplies,42,1
+2012-08-08,Technology,29,1
+2012-08-09,Technology,18,2
+2012-08-11,Technology,29,2
+2012-08-15,Furniture,23,2
+2012-08-15,Technology,32,2
+2012-08-16,Furniture,27,3
+2012-08-18,Furniture,16,1
+2012-08-20,Office Supplies,17,1
+2012-08-28,Furniture,22,2
+2012-08-29,Furniture,8,1
+2012-09-01,Furniture,4,1
+2012-09-07,Furniture,47,1
+2012-09-13,Technology,18,1
+2012-09-14,Furniture,15,1
+2012-09-14,Office Supplies,24,2
+2012-09-19,Technology,49,3
+2012-09-20,Furniture,7,1
+2012-09-20,Technology,22,3
+2012-09-21,Furniture,17,1
+2012-09-21,Office Supplies,15,1
+2012-09-21,Technology,11,1
+2012-09-22,Office Supplies,14,2
+2012-09-22,Technology,24,1
+2012-09-26,Technology,13,1
+2012-09-27,Furniture,37,2
+2012-09-27,Office Supplies,37,2
+2012-10-05,Furniture,14,1
+2012-10-05,Office Supplies,19,1
+2012-10-12,Office Supplies,14,1
+2012-10-16,Furniture,23,1
+2012-10-17,Furniture,27,1
+2012-10-17,Office Supplies,13,1
+2012-10-17,Technology,36,1
+2012-10-18,Furniture,40,2
+2012-10-24,Office Supplies,19,1
+2012-10-25,Technology,16,1
+2012-10-26,Furniture,26,1
+2012-10-26,Technology,37,1
+2012-10-27,Furniture,18,1
+2012-11-02,Furniture,25,1
+2012-11-02,Office Supplies,24,1
+2012-11-03,Furniture,18,1
+2012-11-03,Office Supplies,19,1
+2012-11-03,Technology,36,2
+2012-11-04,Technology,32,2
+2012-11-05,Technology,19,1
+2012-11-06,Furniture,20,1
+2012-11-08,Furniture,47,1
+2012-11-08,Technology,20,2
+2012-11-09,Office Supplies,35,2
+2012-11-10,Technology,50,2
+2012-11-11,Furniture,11,1
+2012-11-13,Technology,26,2
+2012-11-14,Furniture,23,3
+2012-11-15,Furniture,21,1
+2012-11-15,Office Supplies,5,1
+2012-11-18,Office Supplies,2,1
+2012-11-18,Technology,18,2
+2012-11-21,Office Supplies,50,3
+2012-11-22,Technology,17,1
+2012-11-24,Technology,33,2
+2012-11-25,Office Supplies,11,1
+2012-11-27,Technology,12,1
+2012-11-28,Office Supplies,16,1
+2012-11-28,Technology,7,1
+2012-11-29,Technology,28,2
+2012-12-02,Technology,14,1
+2012-12-05,Technology,22,2
+2012-12-06,Technology,15,1
+2012-12-07,Furniture,31,2
+2012-12-08,Furniture,9,1
+2012-12-09,Office Supplies,9,1
+2012-12-12,Office Supplies,7,1
+2012-12-13,Furniture,18,1
+2012-12-14,Furniture,16,1
+2012-12-16,Furniture,61,1
+2012-12-16,Technology,13,1
+2012-12-19,Office Supplies,19,1
+2012-12-21,Technology,25,2
+2012-12-23,Furniture,23,1
+2012-12-23,Office Supplies,2,1
+2012-12-23,Technology,11,1
+2012-12-25,Furniture,33,1
+2012-12-26,Technology,17,1
+2012-12-27,Technology,18,1
+2012-12-28,Furniture,21,2
+2012-12-30,Office Supplies,14,1
+2012-12-30,Technology,10,1
+2013-01-01,Office Supplies,22,1
+2013-01-06,Technology,11,1
+2013-01-09,Office Supplies,14,1
+2013-01-10,Furniture,39,3
+2013-01-12,Technology,20,2
+2013-01-15,Office Supplies,23,2
+2013-01-25,Furniture,16,2
+2013-01-27,Technology,17,1
+2013-02-01,Technology,45,1
+2013-02-03,Furniture,19,2
+2013-02-05,Furniture,18,1
+2013-02-22,Furniture,21,1
+2013-02-23,Technology,17,1
+2013-02-24,Furniture,12,1
+2013-02-26,Furniture,14,1
+2013-03-05,Furniture,19,1
+2013-03-06,Office Supplies,24,1
+2013-03-07,Technology,21,1
+2013-03-13,Technology,35,2
+2013-03-14,Furniture,16,2
+2013-03-19,Office Supplies,19,2
+2013-03-21,Furniture,19,2
+2013-03-28,Office Supplies,21,1
+2013-03-28,Technology,4,1
+2013-03-30,Technology,9,1
+2013-04-05,Technology,27,2
+2013-04-12,Technology,4,1
+2013-04-14,Furniture,23,1
+2013-04-18,Technology,34,3
+2013-04-19,Furniture,14,1
+2013-04-22,Technology,43,4
+2013-04-25,Furniture,57,1
+2013-05-04,Office Supplies,21,2
+2013-05-04,Technology,23,2
+2013-05-07,Furniture,7,1
+2013-05-07,Technology,28,1
+2013-05-09,Office Supplies,24,1
+2013-05-10,Technology,46,1
+2013-05-11,Technology,27,1
+2013-05-17,Office Supplies,10,1
+2013-05-22,Technology,14,1
+2013-05-23,Furniture,10,1
+2013-05-23,Office Supplies,19,1
+2013-05-23,Technology,62,4
+2013-05-24,Technology,43,1
+2013-05-25,Furniture,7,1
+2013-05-25,Technology,7,1
+2013-05-28,Furniture,9,1
+2013-05-28,Technology,8,1
+2013-05-30,Technology,27,1
+2013-06-05,Technology,18,1
+2013-06-11,Technology,6,1
+2013-06-12,Technology,16,1
+2013-06-13,Technology,42,2
+2013-06-14,Furniture,28,1
+2013-06-14,Technology,21,2
+2013-06-15,Technology,8,1
+2013-06-16,Furniture,31,2
+2013-06-16,Office Supplies,31,2
+2013-06-18,Furniture,13,1
+2013-06-18,Office Supplies,46,4
+2013-06-19,Office Supplies,11,1
+2013-06-19,Technology,8,1
+2013-06-20,Technology,6,1
+2013-06-21,Technology,13,1
+2013-06-23,Furniture,11,1
+2013-06-25,Furniture,38,2
+2013-06-25,Office Supplies,26,1
+2013-07-03,Technology,19,2
+2013-07-04,Office Supplies,9,1
+2013-07-04,Technology,24,2
+2013-07-07,Technology,50,3
+2013-07-13,Technology,8,1
+2013-07-17,Technology,31,2
+2013-07-18,Technology,31,2
+2013-07-23,Technology,18,1
+2013-08-01,Office Supplies,22,2
+2013-08-02,Technology,15,1
+2013-08-03,Furniture,17,2
+2013-08-03,Office Supplies,47,2
+2013-08-03,Technology,28,2
+2013-08-06,Technology,35,2
+2013-08-07,Office Supplies,14,2
+2013-08-08,Furniture,19,1
+2013-08-09,Technology,25,2
+2013-08-10,Technology,26,2
+2013-08-15,Technology,18,1
+2013-08-16,Technology,44,1
+2013-08-17,Furniture,27,2
+2013-08-20,Furniture,35,1
+2013-08-20,Technology,21,2
+2013-08-22,Office Supplies,21,1
+2013-08-24,Furniture,19,1
+2013-08-27,Technology,8,1
+2013-08-28,Furniture,16,1
+2013-08-28,Office Supplies,30,2
+2013-08-29,Office Supplies,52,3
+2013-08-30,Furniture,17,1
+2013-08-31,Technology,11,1
+2013-09-10,Furniture,12,1
+2013-09-10,Office Supplies,11,1
+2013-09-13,Technology,14,1
+2013-09-14,Furniture,8,1
+2013-09-14,Technology,43,3
+2013-09-17,Technology,12,1
+2013-09-18,Office Supplies,31,1
+2013-09-20,Office Supplies,11,1
+2013-09-20,Technology,53,1
+2013-09-24,Technology,52,1
+2013-09-26,Technology,32,2
+2013-09-29,Technology,36,2
+2013-10-01,Furniture,38,2
+2013-10-02,Furniture,15,1
+2013-10-04,Furniture,18,1
+2013-10-05,Technology,8,1
+2013-10-10,Technology,22,1
+2013-10-11,Technology,45,1
+2013-10-12,Technology,27,1
+2013-10-13,Furniture,15,1
+2013-10-13,Technology,13,1
+2013-10-17,Furniture,31,2
+2013-10-25,Furniture,10,1
+2013-10-25,Technology,34,1
+2013-10-30,Technology,20,2
+2013-11-05,Technology,14,1
+2013-11-06,Technology,10,1
+2013-11-07,Furniture,24,1
+2013-11-07,Office Supplies,82,1
+2013-11-07,Technology,14,1
+2013-11-08,Technology,12,1
+2013-11-09,Furniture,30,2
+2013-11-09,Office Supplies,33,1
+2013-11-10,Furniture,29,1
+2013-11-10,Technology,25,1
+2013-11-13,Furniture,28,2
+2013-11-13,Office Supplies,28,2
+2013-11-19,Technology,15,1
+2013-11-21,Technology,31,2
+2013-11-23,Furniture,19,1
+2013-11-28,Furniture,32,2
+2013-11-28,Office Supplies,13,1
+2013-11-30,Furniture,20,1
+2013-12-01,Technology,28,2
+2013-12-03,Furniture,27,3
+2013-12-04,Technology,8,1
+2013-12-06,Technology,85,3
+2013-12-07,Office Supplies,62,1
+2013-12-07,Technology,30,1
+2013-12-11,Technology,8,1
+2013-12-12,Office Supplies,19,1
+2013-12-13,Office Supplies,12,1
+2013-12-13,Technology,59,1
+2013-12-17,Technology,10,1
+2013-12-18,Technology,7,1
+2013-12-19,Technology,9,1
+2013-12-20,Office Supplies,13,1
+2013-12-20,Technology,35,2
+2013-12-21,Office Supplies,6,1
+2013-12-25,Technology,19,1
+2013-12-26,Furniture,95,1
+2013-12-26,Office Supplies,36,3
+2013-12-27,Office Supplies,6,1
+2013-12-27,Technology,24,2
+2013-12-31,Office Supplies,21,1
+2014-01-02,Furniture,20,1
+2014-01-02,Technology,38,4
+2014-01-04,Technology,17,1
+2014-01-05,Furniture,28,2
+2014-01-07,Furniture,21,1
+2014-01-08,Furniture,10,1
+2014-01-12,Office Supplies,33,2
+2014-01-15,Office Supplies,28,2
+2014-01-19,Furniture,28,3
+2014-01-21,Furniture,21,1
+2014-01-21,Office Supplies,32,2
+2014-01-23,Furniture,19,1
+2014-01-28,Furniture,29,2
+2014-01-28,Office Supplies,30,2
+2014-01-28,Technology,16,1
+2014-01-29,Office Supplies,27,3
+2014-01-29,Technology,21,1
+2014-01-31,Office Supplies,9,1
+2014-02-02,Office Supplies,4,1
+2014-02-05,Furniture,44,2
+2014-02-08,Office Supplies,19,1
+2014-02-08,Technology,21,2
+2014-02-09,Furniture,19,2
+2014-02-14,Office Supplies,37,3
+2014-02-18,Furniture,30,2
+2014-02-18,Technology,22,2
+2014-02-20,Office Supplies,7,1
+2014-02-21,Furniture,17,1
+2014-02-26,Furniture,22,1
+2014-02-27,Office Supplies,44,3
+2014-02-27,Technology,35,2
+2014-03-05,Office Supplies,11,1
+2014-03-08,Furniture,22,1
+2014-03-08,Technology,24,1
+2014-03-11,Technology,10,1
+2014-03-13,Furniture,51,3
+2014-03-14,Furniture,6,1
+2014-03-14,Office Supplies,12,1
+2014-03-19,Office Supplies,19,1
+2014-03-20,Office Supplies,19,2
+2014-03-21,Furniture,33,2
+2014-03-29,Furniture,35,2
+2014-03-29,Office Supplies,7,1
+2014-03-30,Furniture,9,1
+2014-04-04,Technology,13,1
+2014-04-05,Technology,12,1
+2014-04-09,Technology,18,1
+2014-04-12,Office Supplies,11,1
+2014-04-16,Office Supplies,13,1
+2014-04-18,Technology,13,1
+2014-04-23,Technology,41,2
+2014-04-26,Furniture,42,2
+2014-04-29,Furniture,7,1
+2014-04-30,Technology,38,2
+2014-05-01,Furniture,19,1
+2014-05-01,Technology,16,2
+2014-05-03,Office Supplies,35,1
+2014-05-04,Furniture,20,2
+2014-05-04,Technology,19,1
+2014-05-14,Technology,36,3
+2014-05-16,Technology,39,1
+2014-05-21,Technology,74,2
+2014-05-22,Office Supplies,12,1
+2014-05-24,Furniture,17,1
+2014-05-29,Technology,27,1
+2014-05-30,Technology,19,1
+2014-05-31,Furniture,30,1
+2014-06-01,Technology,16,2
+2014-06-03,Office Supplies,13,1
+2014-06-04,Technology,21,1
+2014-06-05,Office Supplies,44,3
+2014-06-05,Technology,16,1
+2014-06-06,Office Supplies,47,3
+2014-06-07,Furniture,32,2
+2014-06-08,Furniture,4,1
+2014-06-10,Furniture,24,1
+2014-06-10,Office Supplies,31,3
+2014-06-10,Technology,13,1
+2014-06-11,Furniture,34,2
+2014-06-11,Technology,31,1
+2014-06-12,Technology,43,2
+2014-06-13,Office Supplies,15,2
+2014-06-13,Technology,25,1
+2014-06-14,Technology,20,1
+2014-06-17,Furniture,11,1
+2014-06-17,Office Supplies,58,4
+2014-06-17,Technology,29,1
+2014-06-18,Technology,18,2
+2014-06-20,Office Supplies,29,4
+2014-06-20,Technology,27,2
+2014-06-22,Furniture,9,1
+2014-06-22,Office Supplies,49,1
+2014-06-24,Technology,34,2
+2014-06-25,Furniture,31,1
+2014-06-25,Technology,51,2
+2014-06-27,Furniture,17,1
+2014-06-27,Office Supplies,18,1
+2014-06-28,Technology,24,1
+2014-07-01,Technology,28,2
+2014-07-08,Office Supplies,34,2
+2014-07-11,Furniture,26,2
+2014-07-15,Furniture,14,2
+2014-07-15,Technology,58,3
+2014-07-20,Furniture,17,1
+2014-07-25,Furniture,20,1
+2014-07-25,Technology,16,2
+2014-07-26,Technology,29,1
+2014-07-30,Technology,8,1
+2014-08-01,Furniture,53,1
+2014-08-02,Technology,23,3
+2014-08-05,Furniture,7,1
+2014-08-12,Technology,22,1
+2014-08-15,Technology,17,1
+2014-08-17,Furniture,14,1
+2014-08-19,Furniture,44,3
+2014-08-19,Technology,40,2
+2014-08-20,Office Supplies,28,1
+2014-08-22,Technology,21,1
+2014-08-24,Furniture,23,2
+2014-08-26,Technology,8,1
+2014-08-27,Furniture,27,2
+2014-08-30,Office Supplies,7,1
+2014-08-31,Technology,57,1
+2014-09-02,Office Supplies,43,1
+2014-09-02,Technology,4,1
+2014-09-03,Furniture,11,1
+2014-09-03,Office Supplies,27,2
+2014-09-03,Technology,13,1
+2014-09-05,Technology,33,2
+2014-09-09,Technology,27,1
+2014-09-10,Furniture,17,1
+2014-09-12,Office Supplies,18,1
+2014-09-13,Technology,19,1
+2014-09-14,Technology,51,3
+2014-09-16,Office Supplies,9,1
+2014-09-17,Furniture,25,2
+2014-09-17,Technology,12,1
+2014-09-19,Office Supplies,19,1
+2014-09-21,Furniture,18,1
+2014-09-24,Office Supplies,38,2
+2014-09-25,Technology,29,1
+2014-09-26,Furniture,19,1
+2014-09-27,Furniture,9,1
+2014-09-30,Furniture,17,1
+2014-10-01,Technology,29,1
+2014-10-02,Office Supplies,18,1
+2014-10-02,Technology,18,1
+2014-10-04,Furniture,24,1
+2014-10-09,Technology,15,2
+2014-10-11,Technology,10,1
+2014-10-12,Technology,17,1
+2014-10-14,Furniture,10,1
+2014-10-14,Technology,15,1
+2014-10-15,Office Supplies,21,1
+2014-10-16,Office Supplies,9,1
+2014-10-16,Technology,27,1
+2014-10-17,Furniture,9,1
+2014-10-17,Technology,43,1
+2014-10-18,Technology,38,1
+2014-10-21,Technology,10,1
+2014-10-24,Technology,16,1
+2014-10-28,Furniture,40,2
+2014-10-30,Technology,49,1
+2014-10-31,Furniture,21,2
+2014-11-04,Office Supplies,15,1
+2014-11-04,Technology,21,2
+2014-11-05,Technology,28,2
+2014-11-07,Technology,18,2
+2014-11-11,Furniture,7,1
+2014-11-11,Technology,24,1
+2014-11-13,Furniture,30,2
+2014-11-13,Technology,13,1
+2014-11-14,Furniture,4,1
+2014-11-15,Technology,33,2
+2014-11-18,Office Supplies,18,1
+2014-11-19,Furniture,21,2
+2014-11-19,Office Supplies,9,1
+2014-11-19,Technology,13,1
+2014-11-23,Office Supplies,19,1
+2014-11-24,Technology,26,3
+2014-11-25,Technology,14,1
+2014-11-27,Furniture,16,2
+2014-11-28,Furniture,37,1
+2014-11-29,Technology,27,3
+2014-12-02,Office Supplies,22,1
+2014-12-03,Furniture,13,1
+2014-12-03,Technology,9,1
+2014-12-09,Furniture,7,1
+2014-12-11,Technology,10,1
+2014-12-12,Technology,19,1
+2014-12-16,Technology,42,3
+2014-12-17,Office Supplies,23,1
+2014-12-18,Furniture,48,3
+2014-12-18,Office Supplies,95,3
+2014-12-18,Technology,52,1
+2014-12-19,Furniture,13,1
+2014-12-19,Office Supplies,121,1
+2014-12-19,Technology,20,1
+2014-12-20,Furniture,28,1
+2014-12-23,Furniture,21,1
+2014-12-24,Technology,13,1
+2014-12-26,Office Supplies,20,2
+2014-12-26,Technology,54,3
+2014-12-30,Technology,42,3
+2014-12-31,Technology,48,1
+2015-01-03,Office Supplies,38,1
+2015-01-03,Technology,20,1
+2015-01-08,Technology,18,2
+2015-01-14,Technology,88,3
+2015-01-18,Furniture,40,3
+2015-01-18,Office Supplies,68,4
+2015-01-20,Furniture,8,1
+2015-01-23,Office Supplies,30,1
+2015-01-23,Technology,15,1
+2015-01-25,Furniture,29,1
+2015-01-28,Furniture,54,1
+2015-01-29,Furniture,23,1
+2015-01-30,Furniture,13,1
+2015-01-31,Technology,48,2
+2015-02-08,Office Supplies,9,1
+2015-02-10,Office Supplies,27,1
+2015-02-11,Furniture,14,1
+2015-02-11,Office Supplies,18,1
+2015-02-11,Technology,23,2
+2015-02-12,Technology,42,2
+2015-02-13,Furniture,38,2
+2015-02-14,Office Supplies,9,1
+2015-02-17,Furniture,29,1
+2015-02-24,Technology,32,2
+2015-02-27,Office Supplies,9,1
+2015-03-05,Furniture,20,1
+2015-03-06,Furniture,11,1
+2015-03-09,Office Supplies,19,1
+2015-03-11,Furniture,33,1
+2015-03-13,Furniture,10,1
+2015-03-14,Office Supplies,21,2
+2015-03-15,Furniture,22,1
+2015-03-17,Technology,67,2
+2015-03-18,Technology,14,1
+2015-03-19,Office Supplies,21,1
+2015-03-19,Technology,15,1
+2015-03-24,Furniture,26,1
+2015-03-26,Office Supplies,11,1
+2015-03-26,Technology,37,2
+2015-03-28,Furniture,31,2
+2015-03-31,Furniture,46,1
+2015-04-01,Furniture,26,2
+2015-04-02,Office Supplies,47,1
+2015-04-03,Furniture,24,2
+2015-04-07,Office Supplies,2,1
+2015-04-07,Technology,13,1
+2015-04-09,Furniture,72,2
+2015-04-09,Office Supplies,59,1
+2015-04-11,Technology,9,1
+2015-04-14,Office Supplies,29,2
+2015-04-14,Technology,19,1
+2015-04-15,Furniture,9,1
+2015-04-15,Office Supplies,53,1
+2015-04-16,Furniture,35,1
+2015-04-16,Office Supplies,40,3
+2015-04-16,Technology,17,1
+2015-04-17,Office Supplies,19,1
+2015-04-17,Technology,6,1
+2015-04-21,Furniture,39,2
+2015-04-21,Technology,23,1
+2015-04-24,Technology,29,2
+2015-04-30,Office Supplies,33,3
+2015-05-01,Furniture,18,1
+2015-05-01,Office Supplies,9,1
+2015-05-01,Technology,25,2
+2015-05-05,Technology,16,1
+2015-05-08,Technology,74,1
+2015-05-09,Furniture,23,1
+2015-05-13,Furniture,23,2
+2015-05-15,Office Supplies,46,1
+2015-05-15,Technology,18,1
+2015-05-16,Furniture,38,1
+2015-05-16,Office Supplies,18,1
+2015-05-16,Technology,11,1
+2015-05-17,Furniture,18,1
+2015-05-19,Technology,24,1
+2015-05-20,Furniture,11,1
+2015-05-20,Office Supplies,28,2
+2015-05-22,Office Supplies,35,2
+2015-05-24,Furniture,13,1
+2015-05-26,Furniture,15,1
+2015-05-28,Furniture,10,1
+2015-05-29,Furniture,12,1
+2015-05-29,Office Supplies,14,1
+2015-05-29,Technology,15,1
+2015-06-02,Furniture,12,1
+2015-06-02,Technology,16,2
+2015-06-03,Furniture,18,2
+2015-06-03,Office Supplies,18,1
+2015-06-06,Technology,11,1
+2015-06-09,Technology,14,1
+2015-06-10,Office Supplies,7,1
+2015-06-10,Technology,16,1
+2015-06-12,Technology,18,1
+2015-06-14,Furniture,28,2
+2015-06-16,Technology,23,2
+2015-06-17,Office Supplies,9,1
+2015-06-17,Technology,24,2
+2015-06-18,Furniture,14,1
+2015-06-18,Office Supplies,13,1
+2015-06-20,Furniture,15,1
+2015-06-20,Technology,25,1
+2015-06-21,Furniture,7,1
+2015-06-23,Technology,21,1
+2015-06-24,Furniture,56,4
+2015-06-24,Technology,46,1
+2015-06-26,Furniture,29,1
+2015-06-27,Furniture,12,1
+2015-06-27,Technology,33,1
+2015-06-28,Office Supplies,53,4
+2015-07-03,Office Supplies,27,1
+2015-07-04,Office Supplies,28,1
+2015-07-05,Furniture,17,1
+2015-07-05,Technology,16,1
+2015-07-09,Furniture,55,3
+2015-07-10,Furniture,35,2
+2015-07-11,Furniture,23,1
+2015-07-12,Furniture,22,1
+2015-07-12,Office Supplies,19,1
+2015-07-14,Technology,59,1
+2015-07-17,Office Supplies,61,2
+2015-07-18,Furniture,11,1
+2015-07-19,Furniture,36,2
+2015-07-21,Furniture,18,1
+2015-07-23,Office Supplies,23,1
+2015-07-31,Office Supplies,12,1
+2015-07-31,Technology,8,1
+2015-08-02,Furniture,25,1
+2015-08-02,Office Supplies,14,2
+2015-08-02,Technology,11,1
+2015-08-04,Office Supplies,26,1
+2015-08-04,Technology,7,1
+2015-08-05,Office Supplies,20,2
+2015-08-05,Technology,34,2
+2015-08-06,Technology,73,1
+2015-08-07,Furniture,29,2
+2015-08-07,Technology,7,1
+2015-08-11,Furniture,6,1
+2015-08-11,Technology,32,2
+2015-08-12,Technology,15,1
+2015-08-14,Furniture,29,2
+2015-08-14,Office Supplies,25,1
+2015-08-18,Office Supplies,10,1
+2015-08-18,Technology,26,1
+2015-08-20,Technology,27,2
+2015-08-23,Technology,34,4
+2015-08-25,Office Supplies,19,1
+2015-08-26,Furniture,57,1
+2015-08-28,Furniture,14,1
+2015-08-28,Office Supplies,12,1
+2015-08-28,Technology,6,1
+2015-08-29,Office Supplies,26,2
+2015-08-29,Technology,37,2
+2015-09-01,Office Supplies,26,1
+2015-09-01,Technology,25,1
+2015-09-02,Furniture,3,1
+2015-09-02,Office Supplies,19,1
+2015-09-03,Office Supplies,12,1
+2015-09-04,Furniture,28,2
+2015-09-05,Furniture,38,2
+2015-09-05,Office Supplies,14,2
+2015-09-05,Technology,18,1
+2015-09-06,Furniture,7,1
+2015-09-08,Furniture,39,2
+2015-09-08,Office Supplies,38,4
+2015-09-08,Technology,10,1
+2015-09-11,Furniture,33,1
+2015-09-12,Furniture,22,1
+2015-09-12,Technology,23,1
+2015-09-13,Technology,30,3
+2015-09-16,Furniture,8,1
+2015-09-16,Office Supplies,18,1
+2015-09-16,Technology,22,1
+2015-09-17,Furniture,11,1
+2015-09-17,Office Supplies,29,1
+2015-09-17,Technology,25,1
+2015-09-18,Furniture,31,1
+2015-09-18,Office Supplies,11,1
+2015-09-18,Technology,79,2
+2015-09-19,Furniture,19,1
+2015-09-19,Office Supplies,28,1
+2015-09-19,Technology,25,1
+2015-09-20,Office Supplies,17,1
+2015-09-20,Technology,17,1
+2015-09-22,Technology,40,2
+2015-09-23,Furniture,26,2
+2015-09-24,Furniture,25,1
+2015-09-24,Office Supplies,12,1
+2015-09-26,Furniture,82,3
+2015-09-26,Office Supplies,14,1
+2015-09-28,Furniture,24,2
+2015-09-29,Technology,37,2
+2015-09-30,Technology,14,1
+2015-10-02,Technology,8,1
+2015-10-03,Technology,21,1
+2015-10-04,Furniture,13,1
+2015-10-04,Technology,23,2
+2015-10-06,Technology,41,2
+2015-10-07,Furniture,13,1
+2015-10-07,Technology,11,1
+2015-10-09,Furniture,28,2
+2015-10-11,Furniture,24,2
+2015-10-11,Office Supplies,34,2
+2015-10-12,Furniture,15,1
+2015-10-13,Technology,15,1
+2015-10-14,Office Supplies,27,2
+2015-10-15,Office Supplies,35,2
+2015-10-15,Technology,20,1
+2015-10-17,Furniture,20,1
+2015-10-17,Technology,39,1
+2015-10-23,Office Supplies,18,1
+2015-10-23,Technology,10,1
+2015-10-24,Furniture,38,1
+2015-10-24,Office Supplies,26,1
+2015-10-25,Furniture,12,1
+2015-10-27,Furniture,26,1
+2015-10-28,Technology,68,4
+2015-10-29,Technology,14,1
+2015-10-31,Office Supplies,35,2
+2015-10-31,Technology,28,1
+2015-11-01,Office Supplies,8,1
+2015-11-03,Furniture,11,1
+2015-11-04,Technology,8,1
+2015-11-06,Office Supplies,87,1
+2015-11-07,Furniture,33,1
+2015-11-07,Office Supplies,15,2
+2015-11-07,Technology,14,1
+2015-11-08,Office Supplies,24,1
+2015-11-11,Office Supplies,18,2
+2015-11-11,Technology,30,1
+2015-11-12,Furniture,14,2
+2015-11-13,Furniture,23,1
+2015-11-14,Technology,8,1
+2015-11-18,Technology,46,1
+2015-11-19,Furniture,40,4
+2015-11-19,Technology,26,1
+2015-11-20,Furniture,37,1
+2015-11-20,Office Supplies,57,1
+2015-11-20,Technology,19,1
+2015-11-21,Furniture,8,1
+2015-11-21,Technology,23,1
+2015-11-22,Furniture,26,2
+2015-11-22,Technology,35,3
+2015-11-24,Technology,38,1
+2015-11-26,Office Supplies,30,1
+2015-11-27,Furniture,11,1
+2015-11-27,Office Supplies,12,1
+2015-11-27,Technology,15,1
+2015-11-28,Furniture,46,1
+2015-11-29,Technology,18,2
+2015-12-02,Furniture,14,1
+2015-12-02,Office Supplies,10,1
+2015-12-02,Technology,56,4
+2015-12-03,Furniture,39,2
+2015-12-03,Office Supplies,8,1
+2015-12-04,Furniture,19,1
+2015-12-05,Office Supplies,15,1
+2015-12-06,Office Supplies,29,1
+2015-12-07,Furniture,12,1
+2015-12-08,Technology,26,2
+2015-12-09,Office Supplies,4,1
+2015-12-09,Technology,28,1
+2015-12-10,Technology,68,2
+2015-12-13,Office Supplies,60,2
+2015-12-15,Technology,66,4
+2015-12-16,Furniture,16,1
+2015-12-17,Furniture,54,1
+2015-12-17,Office Supplies,18,1
+2015-12-18,Furniture,54,3
+2015-12-19,Office Supplies,15,2
+2015-12-19,Technology,11,1
+2015-12-20,Furniture,34,2
+2015-12-20,Office Supplies,19,2
+2015-12-22,Furniture,19,1
+2015-12-24,Furniture,23,2
+2015-12-24,Technology,34,1
+2015-12-25,Office Supplies,25,1
+2015-12-29,Furniture,24,1
+2015-12-29,Office Supplies,13,1
+2015-12-30,Technology,26,3
+2015-12-31,Furniture,14,1
+2015-12-31,Technology,19,1

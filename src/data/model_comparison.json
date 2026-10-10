@@ -1,0 +1,109 @@
+{
+  "results": {
+    "revenue_forecasting": [
+      {
+        "model": "Linear Regression",
+        "MAE": 970.22,
+        "RMSE": 1303.11,
+        "R2_Score": 0.6217,
+        "CV_R2_Mean": 0.5984
+      },
+      {
+        "model": "Ridge Regression",
+        "MAE": 970.29,
+        "RMSE": 1303.11,
+        "R2_Score": 0.6217,
+        "CV_R2_Mean": 0.5985
+      },
+      {
+        "model": "Decision Tree",
+        "MAE": 443.88,
+        "RMSE": 677.79,
+        "R2_Score": 0.8977,
+        "CV_R2_Mean": 0.1779
+      },
+      {
+        "model": "Random Forest",
+        "MAE": 402.49,
+        "RMSE": 568.08,
+        "R2_Score": 0.9281,
+        "CV_R2_Mean": 0.4123
+      },
+      {
+        "model": "Gradient Boosting",
+        "MAE": 731.25,
+        "RMSE": 954.01,
+        "R2_Score": 0.7973,
+        "CV_R2_Mean": 0.4482
+      },
+      {
+        "model": "SVR (RBF Kernel)",
+        "MAE": 908.61,
+        "RMSE": 1370.17,
+        "R2_Score": 0.5818,
+        "CV_R2_Mean": 0.5036
+      }
+    ],
+    "anomaly_detection": [
+      {
+        "model": "Isolation Forest",
+        "Anomalies_Detected": 30,
+        "Normal_Points": 569,
+        "Anomaly_Rate_%": 5.01,
+        "Total_Points": 599
+      },
+      {
+        "model": "Local Outlier Factor",
+        "Anomalies_Detected": 29,
+        "Normal_Points": 570,
+        "Anomaly_Rate_%": 4.84,
+        "Total_Points": 599
+      },
+      {
+        "model": "One-Class SVM",
+        "Anomalies_Detected": 82,
+        "Normal_Points": 517,
+        "Anomaly_Rate_%": 13.69,
+        "Total_Points": 599
+      }
+    ],
+    "inventory_clustering": [
+      {
+        "model": "K-Means (k=2)",
+        "N_Clusters": 2,
+        "Silhouette_Score": 0.4448
+      },
+      {
+        "model": "K-Means (k=3)",
+        "N_Clusters": 3,
+        "Silhouette_Score": 0.4706
+      },
+      {
+        "model": "K-Means (k=4)",
+        "N_Clusters": 4,
+        "Silhouette_Score": 0.3784
+      },
+      {
+        "model": "K-Means (k=5)",
+        "N_Clusters": 5,
+        "Silhouette_Score": 0.3459
+      },
+      {
+        "model": "Agglomerative (k=3)",
+        "N_Clusters": 3,
+        "Silhouette_Score": 0.3648
+      },
+      {
+        "model": "DBSCAN",
+        "N_Clusters": 2,
+        "Silhouette_Score": 0.6442
+      }
+    ]
+  },
+  "best_models": {
+    "revenue_forecasting": "Random Forest",
+    "anomaly_detection": "Isolation Forest",
+    "inventory_clustering": "K-Means (k=3)"
+  },
+  "timestamp": "2026-10-10T08:55:57.952337"
+}

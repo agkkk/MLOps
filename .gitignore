@@ -1,7 +1,11 @@
+venv/
 __pycache__/
+*.pyc
+.env
 mlruns/
 mlflow.db
-venv/
-.env
-kubectl
-minikube-linux-amd64
+mlartifacts/
+*.egg-info/
+dist/
+build/
+.DS_Store

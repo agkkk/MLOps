@@ -1,0 +1,157 @@
+{
+  "before": {
+    "stage": "Before Preprocessing",
+    "total_rows": 1000,
+    "total_columns": 24,
+    "duplicate_rows": 0,
+    "total_missing_values": 806,
+    "columns_with_nulls": {
+      "Postal Code": {
+        "count": 806,
+        "percentage": 80.6
+      }
+    },
+    "dtypes": {
+      "\u00ef\u00bb\u00bfRow ID": "int64",
+      "Order ID": "object",
+      "Order Date": "object",
+      "Ship Date": "object",
+      "Ship Mode": "object",
+      "Customer ID": "object",
+      "Customer Name": "object",
+      "Segment": "object",
+      "Postal Code": "float64",
+      "City": "object",
+      "State": "object",
+      "Country": "object",
+      "Region": "object",
+      "Market": "object",
+      "Product ID": "object",
+      "Category": "object",
+      "Sub-Category": "object",
+      "Product Name": "object",
+      "Sales": "float64",
+      "Quantity": "int64",
+      "Discount": "float64",
+      "Profit": "float64",
+      "Shipping Cost": "float64",
+      "Order Priority": "object"
+    }
+  },
+  "after": {
+    "stage": "After Preprocessing",
+    "total_rows": 1000,
+    "total_columns": 31,
+    "duplicate_rows": 0,
+    "total_missing_values": 0,
+    "columns_with_nulls": {},
+    "dtypes": {
+      "\u00ef\u00bb\u00bfRow ID": "int64",
+      "Order ID": "object",
+      "Order Date": "datetime64[ns]",
+      "Ship Date": "datetime64[ns]",
+      "Ship Mode": "object",
+      "Customer ID": "object",
+      "Customer Name": "object",
+      "Segment": "object",
+      "Postal Code": "object",
+      "City": "object",
+      "State": "object",
+      "Country": "object",
+      "Region": "object",
+      "Market": "object",
+      "Product ID": "object",
+      "Category": "object",
+      "Sub-Category": "object",
+      "Product Name": "object",
+      "Sales": "float64",
+      "Quantity": "int64",
+      "Discount": "float64",
+      "Profit": "float64",
+      "Shipping Cost": "float64",
+      "Order Priority": "object",
+      "is_outlier": "bool",
+      "shipping_delay_days": "int64",
+      "profit_margin": "float64",
+      "revenue_per_unit": "float64",
+      "order_month": "int32",
+      "order_year": "int32",
+      "order_day_of_week": "int32"
+    }
+  },
+  "outlier_summary": {
+    "Sales": {
+      "count": 21,
+      "percentage": 2.1,
+      "lower_bound": -1649.45,
+      "upper_bound": 4954.17
+    },
+    "Profit": {
+      "count": 67,
+      "percentage": 6.7,
+      "lower_bound": -753.21,
+      "upper_bound": 1282.12
+    },
+    "Quantity": {
+      "count": 36,
+      "percentage": 3.6,
+      "lower_bound": -0.5,
+      "upper_bound": 11.5
+    },
+    "Discount": {
+      "count": 63,
+      "percentage": 6.3,
+      "lower_bound": -0.22,
+      "upper_bound": 0.38
+    },
+    "Shipping Cost": {
+      "count": 64,
+      "percentage": 6.4,
+      "lower_bound": -2.04,
+      "upper_bound": 562.93
+    }
+  },
+  "preprocessing_steps": [
+    {
+      "step": 1,
+      "name": "Load Raw Data",
+      "description": "Loaded Global Superstore CSV with latin1 encoding"
+    },
+    {
+      "step": 2,
+      "name": "Remove Duplicates",
+      "description": "Removed 0 duplicate rows"
+    },
+    {
+      "step": 3,
+      "name": "Handle Missing Values",
+      "description": "Imputed nulls using median (numeric) and mode (categorical)"
+    },
+    {
+      "step": 4,
+      "name": "Fix Data Types",
+      "description": "Parsed dates, validated numeric columns"
+    },
+    {
+      "step": 5,
+      "name": "Detect Outliers",
+      "description": "Flagged outliers using IQR method across 5 columns"
+    },
+    {
+      "step": 6,
+      "name": "Feature Engineering",
+      "description": "Created shipping_delay_days, profit_margin, revenue_per_unit, date features"
+    },
+    {
+      "step": 7,
+      "name": "Departmental Transformation",
+      "description": "Split into 5 business tables: Sales, Inventory, Finance, Support, Logistics"
+    },
+    {
+      "step": 8,
+      "name": "Export",
+      "description": "Saved to CSV files and SQLite database"
+    }
+  ],
+  "timestamp": "2026-10-10T08:55:24.261332"
+}

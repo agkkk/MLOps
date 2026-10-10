@@ -1,11 +1,13 @@
 streamlit
 pandas
+numpy
 scikit-learn
 fastapi
 uvicorn
 requests
-seaborn
-matplotlib
+plotly
 mlflow
 schedule
 streamlit-autorefresh
+streamlit-authenticator
+joblib
